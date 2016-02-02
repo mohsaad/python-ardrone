@@ -10,9 +10,11 @@
 import numpy as np
 import cv2
 
+# connect to camera
 cam = cv2.VideoCapture('tcp://192.168.1.1:5555')
 running = True
 
+# display video feed
 while running:
 	running, frame = cam.read()
 	if running:
